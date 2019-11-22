@@ -71,10 +71,6 @@ static void setup_pins(void)
 }
 
 
-static const TEST_PARAMETER_T tDemo = {
-	.ulVerbose = 0,
-	.ulCommand = TEST_COMMAND_Init
-};
 
 TEST_RESULT_T test(TEST_PARAMETER_T *ptTestParams)
 {
@@ -83,7 +79,6 @@ TEST_RESULT_T test(TEST_PARAMETER_T *ptTestParams)
 	TEST_COMMAND_T tCommand;
 
 
-	ptTestParams = &tDemo;
 	systime_init();
 
 	/* Switch all LEDs off. */
