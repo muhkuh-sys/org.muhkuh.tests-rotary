@@ -85,6 +85,7 @@ tBinXpicDram = tEnvXpic.ObjCopy('targets/netx90/xpic/xpic_dram.bin', tElfXpic, O
 #
 
 sources_common = """
+    src/header.c
     src/init.S
     src/main_test.c
     src/xpic_loader.c
