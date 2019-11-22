@@ -291,9 +291,9 @@ static void rotary_test(void)
 
 
 	/* Setup the tests. */
-	rotary_test_init(&(atTests[0]), 0x0000000fU, 0U, 4, aulExpcetedValues, sizeof(aulExpcetedValues));
-	rotary_test_init(&(atTests[1]), 0x000000f0U, 4U, 4, aulExpcetedValues, sizeof(aulExpcetedValues));
-	rotary_test_init(&(atTests[2]), 0x00000f00U, 8U, 4, aulExpcetedValues, sizeof(aulExpcetedValues));
+	rotary_test_init(&(atTests[0]), 0x0000000fU, 0U, 4, aulExpcetedValues, sizeof(aulExpcetedValues)/sizeof(unsigned long));
+	rotary_test_init(&(atTests[1]), 0x000000f0U, 4U, 4, aulExpcetedValues, sizeof(aulExpcetedValues)/sizeof(unsigned long));
+	rotary_test_init(&(atTests[2]), 0x00000f00U, 8U, 4, aulExpcetedValues, sizeof(aulExpcetedValues)/sizeof(unsigned long));
 
 	do
 	{
