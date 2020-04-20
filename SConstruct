@@ -43,6 +43,7 @@ env_xpic_default = atEnv.DEFAULT.Clone()
 tLlvmXpic = atEnv.DEFAULT.GetTool('xpic-toolchain-1.0.2_1')
 tLlvmXpic.ApplyToEnv(env_xpic_default)
 env_xpic_default.Append(CPPDEFINES = [['ASIC_TYP', 'ASIC_TYP_NETX90']])
+env_xpic_default.Append(CCFLAGS = [['-ffreestanding']])
 env_xpic_default.Replace(LIBS = [])
 
 
