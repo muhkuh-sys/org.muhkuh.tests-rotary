@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="mbs/setup2html.xsl"?>
 
-<muhkuh_buildsystem project="org.muhkuh.tests-bronk_rotary">
+<muhkuh_buildsystem project="org.muhkuh.tests-rotary">
 	<project_version>1.0.0</project_version>
 
 	<scons>
